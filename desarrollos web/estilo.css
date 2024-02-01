@@ -1,0 +1,412 @@
+/*ESTILOS GENERALES*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*BARRA DE NAVEGACION*/
+
+.navbar {
+    padding: 2rem;
+    background-color: aliceblue;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    /*distribuye espacio entre elemantos*/
+}
+
+@media screen and (max-width: 760px) {
+
+    /*oculta icono responsivo*/
+    .navbar-brand {
+        display: none;
+    }
+
+}
+
+.violeta {
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px;
+    color: black;
+}
+
+.violeta:hover {
+    color: chartreuse;
+    background-color: rgba(95, 158, 160, 0.918)
+}
+
+/*SECCION HERO-PRINCIPAL*/
+
+.hero {
+    background-color: aliceblue;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.hero-imagen-desarrollador {
+    width: 400px;
+    height: 400px;
+    margin: 10px 0 30px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: rgb(230, 120, 120);
+}
+ h3 {
+    font-size: 1.5rem;
+    color: rgb(230, 120, 120);
+}
+
+/*SOBRE MI*/
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+    border-radius: 50PX;
+    margin: 60px 0 60px 0;
+}
+
+.seccion-oscura {
+    color: aliceblue;
+    background-color: rgb(196, 188, 188);
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.seccion-texto {
+    font-size: 16px;
+}
+
+.badges-contenedor {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges {
+    margin: 5px;
+}
+
+/* hero inferior*/
+
+.proyectos-recientes {
+    padding: 20px;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+
+}
+.seccion-titulo {
+    font-size: 2.5rem;
+    padding: 20px 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.texto-negro {
+    color: black;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: darkslategrey;
+    text-align: center;
+}
+
+.hero-inferior {
+    padding: 10px 5px 10px 5px;
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-image {
+        max-width: 600px;
+    }
+}
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.row {
+    padding: 20px;
+    border: 2px solid rgba(212, 212, 241, 0.822);
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.row:hover {
+    color: aliceblue;
+    background-color: rgba(127, 255, 212, 0.363);
+}
+.proyecto {
+    position: relative;
+   /* padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;*/
+    border-radius: 15px;
+
+}
+
+
+.bi {
+    font-size: 2.5rem;
+    color: greenyellow;
+    background-color: grey;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+    transition: all 0.2s ease;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 16px;
+    margin: 10px;
+}
+
+p {
+    font-size: 12px;
+    color: darkblue;
+}
+
+@media screen and (max-whidth:400px) {
+    .overlay p {
+        font-size: 16px;
+    }
+
+    .overlay i {
+        font-size: 30px;
+    }
+
+}
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+    border-radius: 50%;
+}
+.seccion-clara {
+    color: black;
+    background-color: aliceblue;
+}
+
+.titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.img-normalizada {
+    width: 320px;
+    height: 280px;
+    object-fit: cover;
+
+}
+
+/*PORTFOLIO
+
+.articulos {
+    min-height: 500px;
+    altura minima de seccion
+    padding: 30px;
+}
+
+.articulos .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+testimonios
+
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 300px;
+}*/
+
+/*contacto*/
+
+.contacto .container {
+    max-width: 1100px;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.container .rectangulo {
+    margin-top: -5rem;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+    /*sombra*/
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: aliceblue;
+    font-size: 1.2rem;
+
+}
+
+.contacto button {
+    color: aliceblue;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contacto button i {
+    color: aliceblue;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contacto button:hover {
+    background-color: beige;
+    color: black;
+}
+/*pie de pagina*/ /*adaptable responsivo*/
+
+footer {
+    min-height: 150px;
+}
+.footer-logo {
+    height: 100px;
+    width: 100px;
+    margin:15px 0 0 25px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn {
+ max-width: 500px;
+ max-height: 100px ;
+}
+
+/*.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in ;
+}
+.iconos-redes-sociales i {
+    color: aliceblue;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover {
+    background-color: aliceblue;
+    border: 2px solid rgb(56, 56, 214);
+} 
+.iconos-redes-sociales a:hover i {
+    color: black;
+}*/
+.derechos-de-autor {
+    font-size: 15px;
+    color: rgb(231, 23, 23);
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+
+

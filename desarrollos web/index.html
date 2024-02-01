@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--metadatos-->
+
+  <meta charset="UTF-8">
+  <meta name="author" content="Enrique Lazzaro">
+  <meta name="description" content="Portafolio de desarrollo web de Enrique Lazzaro">
+  <meta name="keywords" content="Html, CSS, Javascript, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--titulo-->
+
+  <title>Curso Boostrap</title>
+
+  <!--boostrap-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!--iconos de boostrap-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="estilo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https: //fonts.googleapis.com/css2? family= Nunito & display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--barra de navegacion boostrap-->
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/www.png" width="100" alt="Logo de la pagina Web">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+          <li class="nav-item">
+            <a class="violeta nav-link" href="#sobre-mi">Sobre MI</a><!-- active aria-current=page-->
+          </li>
+          <li class="nav-item">
+            <a class="violeta nav-link" href="#estructura">Estructura</a>
+          </li>
+          <li class="nav-item">
+            <a class=" violeta nav-link" href="#Blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class=" violeta nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Seccion Hero (principal)-->
+
+  <section class="hero alings-items-strech"><!--estira elementos para completar contenedor-->
+    <div class="hero-principal d-flex flex-column justify-content-center aling-items-center">
+      <img class="hero-imagen-desarrollador rounded-circle" src="Imagenes/LogoSample_ByTailorBrands (1).jpg"
+        alt="Desarrollo Web">
+      <h1> Hola,soy Enrique Lazzaro</h1>
+      <h2> Desarrollador de sitios Web</h2>
+      <h3> HTMl:5 - CSS:3 - JAVASCRIPT - RESPONSIVOS</h3>
+    </div>
+  </section><br><br>
+
+
+  <!--Sobre Mi-->
+
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce a Enrique Lazzaro</h2>
+      <p class="seccion-texto">Mi nombre es Enrique Lazzaro soy Desarrollador Web.
+        Durante mis estudios, adquirí un sólido conocimiento en lenguajes de programación como HTML, CSS, JavaScript,
+        diseños responsivos,así como en el uso de frameworks como Bootstrap.
+        Esta experiencia me permitió adquirir habilidades prácticas en el desarrollo de aplicaciones web y una
+        comprensión más profunda de los procesos de desarrollo ágiles y colaborativos.
+        Soy una persona apasionada por la tecnología y siempre estoy buscando oportunidades para aprender y mejorar mis
+        habilidades. Me considero una persona proactiva, organizada y con capacidad para trabajar tanto de forma
+        independiente como en equipo. Además, tengo una gran atención al detalle y me enorgullece entregar productos de
+        alta calidad.
+        Me encantaria tener la oportunidad de conversar más en detalle sobre cómo puedo contribuir a que su proyecto se
+        vuelva realidad.
+      </p>
+      <div class="badge-contenedor"> <!--badge son boostrap-->
+        <span class="badge text-bg-primary">HTML</span>
+        <span class="badge text-bg-primary">CSS</span>
+        <span class="badge text-bg-primary">JAVASCRIPT</span>
+        <span class="badge text-bg-primary">RESPONSIVOS</span>
+        <span class="badge text-bg-primary">EDUCACION IT</span>
+        <span class="badge text-bg-primary">CODO A CODO</span>
+      </div>
+  </section><br>
+
+  <!--hero inferior-->
+
+  <section id="estructura" class="proyectos-recientes seccion-clara">
+    <div class="proyectos-recientes seccion-clara d-flex flex-column justify-content-center aling-items-center">
+      <h2 class="seccion-titulo texto-negro">ESTRUCTURA WEB</h2>
+      <h3 class="seccion-descripcion">Pasos para la creacion sitio Web</h3>
+    </div>
+    <div class="hero-inferior d-flex flex-column justify-content-center aling-items-center">
+      <!--<img class="hero-imagen-codificacion rounded-circle" src="Imagenes/codificacion (1).png" alt="Desarrollo Web">-->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+
+          <!--Portfolio 1-->
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="proyecto">
+              <img src="imagenes/plans-1867745_640.jpg" class="img-normalizada" alt="Diseño Sitio Web">
+              <div class="overlay">
+                <p>Diseño<br>Creamos paginas web modernas y personalizadas</p>
+                <div class="iconos-contenedor">
+                 <!-- <a href="https://github.com/" target="_blank" rel="noopener noreferrer">link repositorio
+                    <i class="bi bi-github"></i></a>
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Portfolio 2-->
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="proyecto">
+              <img src="Imagenes/code-820275_640.jpg" class="img-normalizada" alt="Desarrollo Web">
+              <div class="overlay">
+                <p>Optimizacion<br>Optimizamos tu sitio web para mejorar la experiencia del usuario </p>
+                <div class="iconos-contenedor">
+                  <!--<a href="https://github.com/" target="_blank" rel="noopener noreferrer"><link repositorio
+                    <i class="bi bi-github"></i></a>
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Portfolio 3-->
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="proyecto">
+              <img src="Imagenes/website-3374825_640.jpg" class="img-normalizada" alt="Diseños Responsivos">
+              <div class="overlay">
+                <p>Diseño<br>creamos paginas web responsivas autoadministrables</p>
+                <div class="iconos-contenedor">
+                  <!--<a href="https://github.com/" target="_blank" rel="noopener noreferrer">link repositorio
+                    <i class="bi bi-github"></i></a>
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Portfolio 4-->
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="proyecto">
+              <img src="Imagenes/startup-849805_640.jpg" class="img-normalizada" alt="Mundo Web">
+              <div class="overlay">
+                <p>Marketing<br>Aplicamos el marketing digital para aumentar la visibilidad de tus productos</p>
+                <div class="iconos-contenedor">
+                  <!--<a href="https://github.com/" target="_blank" rel="noopener noreferrer"><link> repositorio
+                    <i class="bi bi-github"></i></a>
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br>
+
+  <section id="Blogs" class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="titulo">Sitio o Pagina Web</p>
+          <p>Como dueño/a de un negocio, si has llegado aquí es porque obviamente hace unos segundos te has cuestionado
+            el porqué tener un sitio o página web para tu negocio es una buena idea.
+            Vivimos en un mundo donde cada vez más y más se hace necesaria la digitalización de las empresas, pues si no
+            lo hacemos, lamentablemente perdemos la oportunidad de ofrecer a clientes y clientes potenciales los
+            beneficios de los cuales pueden disfrutar gracias a un sitio o página web. Un ejemplo real de esto, es la
+            reciente
+            situación del COVID-19, muchos empresarios han podido seguir con su negocio gracias a ello, mientras otros
+            empresarios se han visto en la necesidad de evolucionar para no tener que tener parados sus negocios y poder
+            seguir ofreciendo una actividad comercial. Esto por mencionar un caso reciente.
+            Si has llegado aquí, te felicitamos. Pues ya tienes un paso adelante, ya que toda buena idea, inicia con
+            preguntas, y esta no es la excepción. Para dar respuesta a tus inquietudes, como profesionales del marketing
+            digital y diseño web.
+          </p>
+
+        </div>
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="titulo"> ¿Necesito un Sitio o Pagina Web?</p>
+          <p>
+            Tener un sitio o página web da visibilidad a tu negocio.<br>
+            Facilita a tus clientes encontrar información sobre tu negocio.<br>
+            Te permite exponer tus productos y servicios.<br>
+            Es un canal de venta muy poderoso y te permite promocionar ofertas.<br>
+            Tener una página web te permite ganar dinero online.<br>
+            Es un canal excelente para interactuar con tus clientes.<br>
+            Tener una página web crea y potencia tu imagen de marca.<br>
+            Te ayuda a crear sinergias con otras empresas y a reclutar empleados.<br>
+            Podrás compartir novedades empresariales y necesidades del sector.<br>
+            Te permite ver lo que les interesa más a tus clientes.<br>
+            La principal diferencia entre un sitio web y una página web es que el sitio web es el conjunto de varias
+            páginas web vinculadas (con una dirección URL única); mientras que una página web es sólo una sección o una
+            parte de un sitio web (con una ubicación dentro de la URL).
+          </p>
+
+        </div>
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="titulo">Tipos de Sitios Web</p>
+          <p>¿Quieres ofrecer productos o servicios?<br>
+            ¿Tienes una empresa y quieres ofrecer información sobre ella?<br>
+            ¿Te gusta escribir y quieres generar contenido sobre un tema en concreto?<br>
+            ¿Buscas debatir sobre algún tema con otros usuarios de la red?<br>
+            ¿Quién es tu público objetivo?<br>
+            Tiendas online o comercios electrónicos.<br>
+            Blogs.<br>
+            Institucionales o corporativas.<br>
+            Noticias o revistas.<br>
+            Redes Sociales.<br>
+            Servicios.<br>
+            Landing pages.<br>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section><br><br>
+
+  <!--ARTICULOS usar tarjetas boostrap
+
+  <section class="articulos justify-content-start">
+    <h2 class="titulo">Articulos</h2>
+    <div class="card">
+      <div class="card-header">
+        Mas Recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">El decorador @property en Python como usarlo</li>
+        </a>
+        <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">El decorador @property en Python como usarlo</li>
+        </a>
+        <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">El decorador @property en Python como usarlo</li>
+        </a>
+      </ul>
+    </div>
+  </section>-->
+
+  <!--TESTIMONIOS carrusell boostrap
+
+  <Section class="testimonios seccion-clara">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son testimonios de mis clientes</h3>
+    <div id="testimonios-carousel" class="carousel carousel-dark slide" data-bs-rider="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imagenes/Analisis_diseno_Procesos_Productivos.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes/jd edwards procesos productivos.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes/organizacion-produccion.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </Section>-->
+
+  <!--CONTACTO-->
+
+  <section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡ Hablemos !
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contactame para iniciar tu proyecto de desarrollo web
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:enrijo1956@yahoo.com.ar">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--pie de pagina-->
+
+  <footer class="seccion-oscura d-flex flex-column aling-items-center justify-content-center">
+    <div class="container text-center rectangulo d-flex justify-content-center">
+      <a class="btn btn-primary" href="#" role="button">facebook</a>
+      <a class="btn btn-primary" href="#" role="button">Instagram</a>
+    </div>
+
+    <!--<img class="footer-logo" src="Imagenes/LogoSample_ByTailorBrands (1).jpg" alt="Logo del proyecto">
+    <p class="footer-texto text-center">Aprendo y creo todos los dias.<br>Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap aling-items-center justify-content-center">
+
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <section class="button">
+      <a href="#" class="bi bi-facebook"></a>
+      <a href="#" class="bi bi-instagram"></a>
+      </section>
+    </div>-->
+    <div class="derechos-de-autor">Creado por Enrique Lazzaro © 2024 - All rights reserved</div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
